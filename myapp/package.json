@@ -2,6 +2,7 @@
   "name": "myapp",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://emilia84.github.io/React_Bakery/",
   "dependencies": {
     "@react-firebase/auth": "^0.2.10",
     "@testing-library/jest-dom": "^5.17.0",
