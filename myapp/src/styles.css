@@ -1,0 +1,533 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Wrapper */
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    width: 85%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(211, 144, 42, 0.08);
+    margin-top: 0;
+    padding: 0;
+}
+#wrapperForm{
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    margin-top: 0;
+    padding: 1em;
+    border: 0.5px solid rgba(143, 100, 6, 0.511);
+    border-radius: 7px;
+    color:rgb(155, 110, 19);
+}
+#wrapperForm1{
+    width: 35%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    margin-top: 0;
+    padding: 1em;
+    border: 0.5px solid rgba(143, 100, 6, 0.511);
+    border-radius: 7px;
+    color:rgb(155, 110, 19);
+}
+#wrapperForm, #wrapperForm1>h1{
+    text-align: center;
+}
+#wrapperForm:hover{
+    background-color: rgba(211, 144, 42, 0.08);
+    transition: 0.5s;
+}
+#wrapperForm1:hover{
+    background-color: rgba(211, 144, 42, 0.08);
+    transition: 0.5s;
+}
+input, textarea{
+    border: 0.5px solid rgb(155, 110, 19);
+    border-radius: 2px;
+}
+textarea{
+    margin-left: 1%;
+    margin-top:2%;
+    margin-bottom: 2%;
+    resize: none;
+}
+fieldset{
+    border: none;
+    color: rgb(93, 90, 92);
+    color:rgb(155, 110, 19);
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+.form-group label {
+    display: flex;
+    align-items: left; 
+}
+  
+#wrapper>h1{
+    text-align: center;
+    color:rgb(155, 110, 19);
+    padding-top:4%;
+}
+
+/* The other component */
+main{
+    margin: 0;
+    padding: 0;
+  
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    top: 0;
+    position: sticky;
+    background-color: rgba(187, 139, 67, 0.562);
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0.5em; 
+    z-index: 5;
+    height: 100px;
+    color:rgb(120, 80, 1);
+    
+}
+#header{
+    display: block;
+    flex:1;
+    font-size: 2.2em;
+    text-align: center;
+}
+
+/* Sign up button */
+.logoutButton{
+    color: rgb(120, 80, 1);
+    margin-top: 2%;
+
+}
+#logout{
+    color: rgb(120, 80, 1);
+
+}
+#signup{
+    display: inline-block;
+    flex: 1;
+    text-align: center;
+    font-size: 1.1em;
+}
+a{
+    text-decoration: none; 
+}
+a:any-link{
+    color: rgb(120, 80, 1);
+}
+a:visited{
+    color:rgb(120, 80, 1);
+}
+
+/*table*/
+#delete{
+    color: rgb(120, 80, 1);
+}
+p{
+    color: rgb(93, 90, 92);
+    margin-left: 5%;
+    margin-right: 5%;
+}
+table {
+    border-collapse: collapse;
+    width: 97%;
+    margin: 0 auto;
+    color: rgb(93, 90, 92);
+    margin-top: 3%;
+    margin-bottom: 4%;
+  }
+
+  th, td {
+    border: 1px solid rgba(143, 100, 6, 0.703);
+    text-align: left;
+    padding: 8px;
+  }
+/* nav bar */
+nav{
+    margin-bottom:0;
+    padding-bottom: 0;
+    background-color:rgba(174, 114, 25, 0.18) ;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    padding:0;
+    margin: 0;
+    margin-bottom: 2em;
+}
+nav ul li{
+    flex: 2.5;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    margin: 0;
+    padding:0.5em;
+
+}
+li:hover{
+    background-image: none;
+    transition: 1s;
+    text-decoration: underline;
+    text-decoration-color: rgba(103, 66, 10, 0.774);
+}
+
+h1{
+    padding: 0.5em;
+}
+#welcome{
+    margin-left: 15px;
+    padding: 0.5em;
+    padding-bottom: 1%;
+    text-align: center;
+    color:rgb(93, 90, 92);
+}
+#products > .abt{
+    text-align: center;
+}
+.abt{
+    margin: 1em;
+    padding: 0.5em;
+    padding-bottom: 5%;
+    text-align: center;
+    color:rgb(93, 90, 92);
+}
+.image_1{
+    width: 100%;
+    height: auto;
+    position: relative;
+    object-fit:cover;
+    border-radius: 6px;
+}
+.image_2{
+    width: 100%;        /* This will make the image fill the container */
+    height: auto;      
+    object-fit:cover;  /* This will cover the area without stretching the image */
+    border-radius: 6px;
+}
+.image_3{
+    width: 100%;
+    height: auto;
+    position: relative;
+    object-fit:contain;
+}
+/* Banner at home page */
+.advert{
+    display: flex;
+    margin-bottom: 0.5em;
+    
+}
+#banners , #bannerAds2{
+    flex: 4.5;
+    position:relative;   
+    align-items: stretch; 
+}
+#bannerAdslong{
+    position: relative;
+}
+
+.white-text {
+    color: white;
+  }
+#banners{
+    margin-right: 0.3em
+}
+#banners img, #bannerAds2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.textboxForAd{
+    display: block;
+    position: absolute;
+    width: 60%;
+    margin: 0 20%;
+    top: 40%;
+    text-align: center;
+    color: white;
+    background-color: rgba(120, 80, 1, 0.639);
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+.flex{
+    display: flex;
+    align-items: stretch;
+}
+.flex input{
+    flex:7;
+    margin:0.5em;
+}
+.flex label{
+    flex:3;
+}
+
+
+#flexButton{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.button{
+    padding: 0.5em 1.5em;
+    background-color: rgb(155, 110, 19);
+    margin:1em;
+    color: whitesmoke;
+}
+#products{
+    display: flex;
+    flex-wrap: wrap;
+}
+.product{
+    width: 33.33%;
+    padding:0.5em;
+    margin-bottom: 0.5em;
+    
+}
+.thumbnail img{
+    height: 24em;
+}
+.itemDescription span{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.itemDescription{
+    text-align: center;
+}
+#justforyou{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    padding:0.5em;
+    margin: 0.5em;
+    color:rgb(155, 110, 19);
+}
+footer{
+    background-color: rgba(187, 139, 67, 0.562); 
+    padding: 1em;
+    text-align: center;
+    margin-top: 2em;
+    line-height: 1.3em;
+}
+footer .copyright {
+    top: -8px;
+    font-size: 0.75em;
+}
+  
+footer ul {
+    list-style-type: none;
+    margin-top: 2%;
+    padding: 0;
+}
+  
+footer ul li {
+    display: inline-block;
+}
+  
+a.social {
+    display: inline-block;
+    text-indent: -9999px;
+    margin-left: 5px;
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+    opacity: 0.4;
+    transition: all 0.5s;
+}
+a.twitter {
+    background-image: url(images/twitter.png);
+}
+a.linkedin {
+    background-image: url(images/linkedin.png);
+}
+a.github {
+    background-image: url(images/github.png);
+}
+a.social:hover {
+    opacity: 1;
+}
+.clearfix {
+    clear: both;
+}
+#comment{
+    width: 100%;
+    height: 7em;
+}
+#wrapperForm input{
+    margin: 0.5em;
+    width: 100%;
+    height: 3em;
+}
+#wrapperForm1 input{
+    margin: 0.5em;
+    width: 90%;
+    height: 3em;
+}
+.resetitem{
+
+   background-color: rgb(155, 110, 19);
+   border: none;
+   border-radius: 2.5px;
+   color: white;
+   padding: 10px 15px; 
+   min-width: 120px; 
+   margin-top: 5%;
+   margin-bottom: 2%;
+   text-align: center; 
+   display: block; 
+   margin-left: auto; 
+   margin-right: auto; 
+    
+}
+.additem{
+
+    background-color: rgb(155, 110, 19);
+    border: none;
+    border-radius: 2.5px;
+    color: white;
+    padding: 10px 15px; 
+    min-width: 120px; 
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center; 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+     
+ }
+/* Drop down meunu */
+.dropdown {
+    overflow: hidden;
+    transition: 1s;
+    text-decoration: underline;
+    text-decoration-color: rgba(103, 66, 10, 0.774);
+}
+.dropdown .dropButton {
+    cursor: pointer;
+    font-size: 16px;  
+    padding-top: 0;
+    padding-bottom: 0;
+    border: none;
+    outline: none;
+    color: rgb(121, 87, 18);
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    text-align: center;
+
+    
+} 
+.dropButton:hover{
+    transition: 1s;
+    text-decoration: underline;
+    text-decoration-color: rgba(103, 66, 10, 0.774);
+}
+.dropdownContent {
+    margin-top: 0.8em;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 25%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdownContent a {
+    float: none;
+    color: black;
+    padding: 1em 1em;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdownContent a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown content when hovering or when the button is clicked */
+.dropdown:hover .dropdownContent,
+.dropButton:focus + .dropdownContent {
+  display: block;
+}
+
+/* For tablet */
+@media screen and (max-width: 768px){
+    #wrapper{
+        width: 100%;
+    }
+    .product{
+        width: 33.33%;
+    }
+    #wrapperForm{
+        width: 80%;
+    }
+    #wrapperForm1{
+        width: 80%;
+    }
+}
+/* For mobile */
+@media screen and (max-width: 426px){
+    header{
+        position: static;
+    }
+    #header{
+        font-size: 35px;
+    }
+    main{
+        width: 100%;
+    }
+    #wrapper{
+        width: 100%;
+    }
+    .product{
+        width: 100%;
+    }
+    .textboxForAd{
+        font-size: small;
+    }
+    #signup{
+        display: none;
+    }
+
+    #wrapperForm{
+        width: 80%;
+    }
+    #wrapperForm1{
+        width: 80%;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    nav ul li{
+        width: 100%;
+    }
+    .dropdownContent{
+        width: 100%;
+    }
+    header{
+        flex-direction: column;
+        
+    }
+    #header{
+        width: 100%;
+    }
+}
